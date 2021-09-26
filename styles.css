@@ -1,0 +1,171 @@
+/*=========================== main setting ===========================*/
+body {
+    font-size: 120%;
+	font-family: 'Times New Roman', Times, serif;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover{
+    color: black;
+}
+
+p {
+    margin: 0;
+}
+
+strong {
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+
+/*=========================== design ===========================*/
+
+/*=========================== span ===========================*/
+
+
+/*=========================== font & size & decoration===========================*/
+.fontsize150 {
+    font-size: 150%;
+}
+
+.fontsize200 {
+    font-size: 200%;
+}
+
+/*=========================== border ===========================*/
+.bor-cir {
+    color: rgb(255, 255, 255);
+    border: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.bor-cir span {
+    color: rgb(150, 150, 150);
+    border: rgb(150, 150, 150);
+}
+/*=========================== background ===========================*/
+
+.bg-main {
+    background-image: url(imgs/bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+}
+
+@media screen and (min-width: 560px) {
+    .bg-main {
+        background-image: url(imgs/bg.png);
+        background-color: rgb(0, 0, 139);
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 60vh;
+        margin-top: 10vh;
+        margin-bottom: 20vh;
+        background-size: 90%;
+        position: relative;
+    }
+}
+
+.bg-main-text {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 30px;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    text-align: center;
+}
+
+.bg-contactus {
+    background-image: url(imgs/map.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    position: relative;
+    z-index: -999;
+}
+
+.bg-contactus::before {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    z-index: -1;
+}
+
+.bg-white {
+    background-color:white;
+}
+
+.bg-gray {
+    background-color: rgb(119, 136, 153);
+}
+
+@media screen and (Max-width:480px) {
+    .bg-gray{
+        height: auto;
+    }
+}
+
+.withmax {
+    width: 100%;
+}
+
+.height10vh {
+    height: 10vh;
+}
+
+.height80vh{
+    height: 80vh;
+}
+
+.imgwidth {
+    width:100%;
+    height: auto;
+}
+
+@media screen and (min-width:560px) {
+    .imgwidth{
+        width: 80%;
+    }
+}
+
+.inlinecenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.left{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.arrange-height {
+    height: 90%;
+}
+
+.card-shadow {
+    box-shadow: 10px 10px 15px -10px;
+}
