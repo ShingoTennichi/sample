@@ -1,0 +1,111 @@
+/* ========== main setting ========== */
+body {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 120%;
+}
+
+footer {
+    background-color: rgb(150, 150, 150);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: black;
+}
+
+h1 {
+    margin: 0;
+}
+
+h2 {
+    margin: 0;
+    padding: 0;
+}
+
+h3 {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    border-radius: 20%;
+}
+
+ul {
+    list-style: none;
+}
+/* ========== top background setting ========== */
+.text-size16px {
+    size: 16px;
+}
+
+.bg-top {
+    background-image: url(../images/map.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+}
+
+.bg-top::before {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 80vh;
+    display: block;
+}
+
+.bg-top-text {
+    color: white;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    text-align: center;
+}
+
+.bg-white-gray {
+    background-color: rgb(211, 211, 211);
+}
+
+@media screen and (min-width:540px) {
+    .inline-center {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+/* ========== other setting ========== */
+@media screen and (max-width: 575px) {
+    .text-center-sm {
+        text-align: center;
+    }
+}
+
+.footer {
+    background-color: gray;
+    display: flex;
+}
+
+.width-max {
+    width: 100%;
+}
+
+.border {
+    border-radius: 10%;
+}
+
+.box-shadow {
+    box-shadow: 10px 10px 15px -10px;
+}
