@@ -8,8 +8,17 @@ html {
 
 body {
     height: 100%;
-    font-size: 120%;
+    font-size: 16px;
 	font-family: 'Times New Roman', Times, serif;
+}
+
+footer {
+    background: gray;
+}
+
+h1, h2, h3, h4, h5, p, ul{
+    margin: 0;
+    padding: 0;
 }
 
 a {
@@ -25,9 +34,7 @@ div p a:hover{
     color: white;
 }
 
-p {
-    margin: 0;
-}
+
 
 strong {
     background-color: black;
@@ -51,7 +58,7 @@ ul {
 
 @media (max-width: 1024px) {
     .fontsize150 {
-        font-size: 120%;
+        font-size: 16px;
     }
 }
 
@@ -141,7 +148,8 @@ ul {
 }
 
 .image-width {
-    width:100%;
+    width: 100%;
+    max-width: 500px;
     height: auto;
 }
 
@@ -149,11 +157,7 @@ ul {
     object-fit: cover;
 }
 
-.inline-center {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+
 
 .right {
     display: flex;
@@ -176,12 +180,32 @@ ul {
 }
 
 /*=========================== footer ===========================*/
-.footer {
-    background-color: rgb(150, 150, 150);
+
+@media screen and (min-width:540px) {
+    .inline-center {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .text-center-sm {
+        text-align: center;
+    }
+}
+
+.width-max {
+    width: 100%;
 }
 
 /*=========================== overwrite bootstrap ===========================*/
 
 .navbar-light {
     background-color: white;
+}
+
+.limit-width {
+    width: 400px;
+    max-width: 500px;
 }
