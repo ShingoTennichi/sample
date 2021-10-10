@@ -59,7 +59,7 @@ ul {
 }
 
 .bg-products {
-    background-image: url(/images/wood.jpg);
+    background-image: url(https://github.com/ShingoTennichi/sample/blob/main/images/wood.jpg?raw=true);
     background-color: rgba(230, 230, 230, 0.8);
     background-blend-mode: color;
 }
