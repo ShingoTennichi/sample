@@ -1,11 +1,16 @@
 /* ========== main setting ========== */
 body {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 16px;
+	font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #424242;
 }
 
 footer {
-    background-color: rgb(150, 150, 150);
+    background: rgb(119,144,169);
+    background: -moz-linear-gradient(223deg, rgba(119,144,169,1) 13%, rgba(155,172,188,1) 48%);
+    background: -webkit-linear-gradient(223deg, rgba(119,144,169,1) 13%, rgba(155,172,188,1) 48%);
+    background: linear-gradient(223deg, rgba(119,144,169,1) 13%, rgba(155,172,188,1) 48%);
 }
 
 a {
@@ -28,7 +33,7 @@ ul {
 
 /* =========== class ============ */
 .bg-main {
-    background:url(https://github.com/ShingoTennichi/sample/blob/main/images/cherry_blossom_castle.jpg?raw=true);
+    background:url(../images/IMG_9.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
