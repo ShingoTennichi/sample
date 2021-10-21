@@ -112,7 +112,7 @@ ul {
 }
 
 .bg-about-us {
-    background-image: url(images/IMG_7.jpg);
+    background-image: url(images/IMG_7.png);
     background-color:var(--clr-dark-cover);
     background-blend-mode:color;
     background-size: cover;
