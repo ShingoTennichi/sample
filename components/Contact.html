@@ -77,30 +77,32 @@
         <h1 class="display-4 text-center">Contact</h1>
         <div class="row row-cols-1 row-cols-lg-2 py-5">
             <div class="col">
-                <form class="h-100">
+                <div class="h-100">
                     <div class="card box-shadow h-100">
-                        <h1 class="card-header align-self-stretch text-center-sm">Want to Write Letter to Us</h1>
+                        <h1 class="card-header align-self-stretch text-center-sm">Want to Write Letter to Us?</h1>
                         <div class="card-body px-5">
                             <label for="Name">Name</label>
-                            <input class="py-2 my-3" id="name" type="text" name="name" placeholder="Name">
+                            <input class="py-2 my-3" id="Name" type="text" name="name" placeholder="Name" value="">
                             <label for="email">E-mail</label>
-                            <input class="py-2 my-3" id="email" type="email" name="email" placeholder="E-mail">
+                            <input class="py-2 my-3" id="Email" type="email" name="email" placeholder="E-mail" value="">
                             <label for="customer_type">Customer type</label>
-                            <select class="text-gray" id="customer_type" name="customer_type" onchange="changeColor(this)">
-                                <option hidden>Choose your type</option>
-                                <option value="company">Company</option>
-                                <option value="personal deal">Personally</option>
+                            <select id="CustomerType" name="customer_type">
+                                <option hidden value="">Choose your type</option>
+                                <option value="Company">Company</option>
+                                <option value="Personally">Personally</option>
                             </select>
-                            <label for="textarea">Message</label>
-                            <textarea class="py-2 my-3" id="textarea" name="textarea" placeholder="Your message here" rows="4" cols="40"></textarea>
+                            <label for="Message">Message</label>
+                            <textarea class="py-2 my-3" id="Message" name="textarea" placeholder="Your message here" rows="4" cols="40" value=""></textarea>
+                            <p class="successfullyMessage" id="successfullyMessage" style="display: none;">Your message has been sent successfully!</p>
+                            <p class="successfullyMessage" id="failedMessage" style="display: none; color: red;">There is empty. Please fill all empty. </p>
                         </div>
                         <div class="card-footer">
                             <div class="text-center p-2">
-                                <input id="submit" type="submit" value="send to us" />
+                                <button class="submit" id="Submit" type="submit">Send</button>
                             </div>
                         </div>
                     </div>
-                </form>
+                </div>
             </div>
             <div class="col">
                 <div class="">
@@ -116,12 +118,6 @@
                         <i class="fas fa-phone"></i>
                         <div>
                             <p class="p-3">06-6210-5181</p>
-                        </div>
-                    </div>
-                    <div class="d-flex align-items-center">
-                        <i class="fas fa-envelope"></i>
-                        <div>
-                            <p class="p-3">coktokinks72@yahoo.co.jp</p>
                         </div>
                     </div>
                     <div class="d-flex align-items-center">
@@ -172,6 +168,8 @@
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <!-- Javascript -->
     <script src="Contact.js"></script>
+    <script src="https://sdk.amazonaws.com/js/aws-sdk-2.1020.0.min.js"></script>
+    <script src="SNSPublishToTopic.js"></script>
     <!-- JSON Glottologist -->
     <script src="https://unpkg.com/glottologist"></script>
     <!-- Bootstrap Javascript-->

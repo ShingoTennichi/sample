@@ -41,15 +41,23 @@ input[type=text],[type=email], select, textarea {
     box-sizing: border-box;
 }
 
-
-input[type=submit]:hover {
-    background-color: royalblue;
-    color: #fff;
-}
-
 input:hover, select:hover, textarea:hover{
     border-color: royalblue;
     box-shadow: 2px 2px 6px royalblue, 0px -1px 6px royalblue;
+}
+
+button:hover {
+    scale: 1.1;
+    color: #ccc;
+    background-color: #424242;
+    transition: 0.3s;
+}
+
+button:active {
+    scale: 1.1;
+    color: #424242;
+    background-color: #fff;
+    transition: none;
 }
 
 iframe {
@@ -84,4 +92,15 @@ iframe {
 
 .width-max {
     width: 100%;
+}
+
+.submit {
+    width:80px;
+    border-radius: 4px;
+    box-shadow: 2px 2px 2px 1px #424242;
+}
+
+.successfullyMessage {
+    align-items: center;
+    justify-content: center;
 }
